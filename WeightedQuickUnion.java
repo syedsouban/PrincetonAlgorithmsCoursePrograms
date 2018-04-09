@@ -18,7 +18,7 @@ public class WeightedQuickUnion {
             sz[i]=1;
         }
     }
-    private int root(int p)
+    protected int root(int p)
     {
         while(p!=id[p])
         {
