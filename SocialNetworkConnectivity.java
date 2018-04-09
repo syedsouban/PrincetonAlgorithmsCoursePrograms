@@ -1,19 +1,15 @@
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.Random;
 import java.util.Scanner;
 
 /**
  * Created by Syed on 09-04-2018.
  */
-public class SocialNetwork extends QuickUnion
+public class SocialNetworkConnectivity extends WeightedQuickUnion
 {
     private int numberOfConnectedComponents=id.length;
 
-    public SocialNetwork(int n)
+    public SocialNetworkConnectivity(int n)
     {
         super(n);
     }
@@ -49,7 +45,7 @@ public class SocialNetwork extends QuickUnion
         System.out.println("Enter the number of users in the social network: ");
         int N = scanner.nextInt();
 
-        SocialNetwork socialNetwork = new SocialNetwork(N);
+        SocialNetworkConnectivity socialNetwork = new SocialNetworkConnectivity(N);
 
         System.out.println("Enter number of union operations to be performed: ");
         int M=scanner.nextInt();
